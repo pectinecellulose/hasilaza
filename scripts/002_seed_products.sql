@@ -1,0 +1,110 @@
+-- Seed products data
+INSERT INTO public.products (slug, name, category, subcategory, price, old_price, description, short_description, specifications, features, images, in_stock, is_best_seller, is_new, rating, reviews) VALUES
+-- TRICYCLES
+('tricycle-cargo-200cc', 'Tricycle Cargo 200cc', 'tricycle', 'Cargo', 1850000, 2100000, 
+ 'Le Tricycle Cargo 200cc est notre modèle phare pour le transport de marchandises. Conçu pour les professionnels du commerce et de la livraison au Sénégal, ce tricycle robuste peut transporter jusqu''à 800kg de charge utile.',
+ 'Tricycle cargo robuste avec moteur 200cc et capacité de charge 800kg',
+ '[{"label": "Moteur", "value": "200cc, 4 temps, refroidi par air"}, {"label": "Puissance", "value": "12 CV / 7500 tr/min"}, {"label": "Capacité réservoir", "value": "15 litres"}, {"label": "Charge utile", "value": "800 kg"}, {"label": "Dimensions benne", "value": "150 x 100 x 40 cm"}, {"label": "Transmission", "value": "5 vitesses + marche arrière"}, {"label": "Freins", "value": "Tambour avant et arrière"}, {"label": "Poids à vide", "value": "320 kg"}, {"label": "Vitesse max", "value": "55 km/h"}, {"label": "Consommation", "value": "4L/100km"}]',
+ ARRAY['Moteur japonais haute performance', 'Benne galvanisée anti-corrosion', 'Suspension renforcée pour charges lourdes', 'Démarrage électrique + kick', 'Phares LED longue durée', 'Garantie 2 ans / 20 000 km', 'Service après-vente inclus'],
+ ARRAY['/images/tricycle-hero.jpg'], true, true, false, 4.8, 127),
+
+('tricycle-cargo-250cc-xl', 'Tricycle Cargo 250cc XL', 'tricycle', 'Cargo XL', 2350000, 2600000,
+ 'Le Tricycle Cargo 250cc XL est notre modèle le plus puissant pour les charges lourdes et les longues distances. Équipé d''un moteur 250cc performant, il peut transporter jusqu''à 1200kg de marchandises.',
+ 'Tricycle cargo haute capacité 250cc pour charges jusqu''à 1200kg',
+ '[{"label": "Moteur", "value": "250cc, 4 temps, refroidi par eau"}, {"label": "Puissance", "value": "16 CV / 7000 tr/min"}, {"label": "Capacité réservoir", "value": "20 litres"}, {"label": "Charge utile", "value": "1200 kg"}, {"label": "Dimensions benne", "value": "180 x 120 x 50 cm"}, {"label": "Transmission", "value": "5 vitesses + marche arrière"}, {"label": "Freins", "value": "Disque avant, tambour arrière"}, {"label": "Poids à vide", "value": "380 kg"}, {"label": "Vitesse max", "value": "60 km/h"}, {"label": "Consommation", "value": "5L/100km"}]',
+ ARRAY['Moteur refroidi par eau pour usage intensif', 'Benne XL renforcée double paroi', 'Suspension pneumatique arrière', 'Cabine semi-fermée optionnelle', 'Système de freinage ABS', 'Garantie 3 ans / 30 000 km', 'Assistance dépannage 24h/24'],
+ ARRAY['/images/tricycle-hero.jpg'], true, false, true, 4.9, 84),
+
+('tricycle-passager-150cc', 'Tricycle Passager 150cc', 'tricycle', 'Passager', 1650000, NULL,
+ 'Le Tricycle Passager 150cc est conçu pour le transport de personnes en toute sécurité et confort. Pouvant accueillir jusqu''à 4 passagers, il est idéal pour les taxis urbains.',
+ 'Tricycle passager 4 places avec cabine fermée et confort optimal',
+ '[{"label": "Moteur", "value": "150cc, 4 temps, refroidi par air"}, {"label": "Puissance", "value": "10 CV / 7500 tr/min"}, {"label": "Capacité réservoir", "value": "12 litres"}, {"label": "Passagers", "value": "4 personnes + conducteur"}, {"label": "Type cabine", "value": "Fermée avec portes"}, {"label": "Transmission", "value": "4 vitesses + marche arrière"}, {"label": "Freins", "value": "Tambour avant et arrière"}, {"label": "Poids à vide", "value": "290 kg"}, {"label": "Vitesse max", "value": "50 km/h"}, {"label": "Consommation", "value": "3.5L/100km"}]',
+ ARRAY['Cabine fermée climatisable', 'Sièges rembourrés confortables', 'Vitres teintées anti-UV', 'Système audio intégré', 'Éclairage intérieur LED', 'Garantie 2 ans / 20 000 km'],
+ ARRAY['/images/tricycle-hero.jpg'], true, false, false, 4.6, 63),
+
+-- MOTOS
+('moto-sport-150cc', 'Moto Sport 150cc', 'moto', 'Sport', 750000, 850000,
+ 'La Moto Sport 150cc allie style et performance pour les amateurs de sensations. Son design agressif et aérodynamique cache un moteur nerveux de 150cc.',
+ 'Moto sportive 150cc au design agressif et performant',
+ '[{"label": "Moteur", "value": "150cc, 4 temps, SOHC"}, {"label": "Puissance", "value": "14 CV / 8500 tr/min"}, {"label": "Capacité réservoir", "value": "12 litres"}, {"label": "Transmission", "value": "5 vitesses"}, {"label": "Freins", "value": "Disque avant, tambour arrière"}, {"label": "Poids à vide", "value": "125 kg"}, {"label": "Hauteur selle", "value": "780 mm"}, {"label": "Vitesse max", "value": "110 km/h"}, {"label": "Consommation", "value": "2.5L/100km"}]',
+ ARRAY['Carénage sport intégral', 'Compteur digital multifonction', 'Phares LED avec feux de jour', 'Pneus tubeless haute adhérence', 'Repose-pieds passager', 'Garantie 1 an / 12 000 km'],
+ ARRAY['/images/motorcycle-product.jpg'], true, true, false, 4.7, 215),
+
+('moto-city-125cc', 'Moto City 125cc', 'moto', 'Urbaine', 550000, NULL,
+ 'La Moto City 125cc est votre compagne idéale pour naviguer dans le trafic urbain. Légère, maniable et économique.',
+ 'Moto urbaine 125cc économique et maniable pour la ville',
+ '[{"label": "Moteur", "value": "125cc, 4 temps"}, {"label": "Puissance", "value": "10 CV / 8000 tr/min"}, {"label": "Capacité réservoir", "value": "10 litres"}, {"label": "Transmission", "value": "4 vitesses"}, {"label": "Freins", "value": "Tambour avant et arrière"}, {"label": "Poids à vide", "value": "105 kg"}, {"label": "Hauteur selle", "value": "760 mm"}, {"label": "Vitesse max", "value": "95 km/h"}, {"label": "Consommation", "value": "2L/100km"}]',
+ ARRAY['Design classique intemporel', 'Consommation ultra basse', 'Démarrage électrique + kick', 'Porte-bagages arrière', 'Pièces détachées disponibles', 'Garantie 1 an / 10 000 km'],
+ ARRAY['/images/motorcycle-product.jpg'], true, false, false, 4.5, 342),
+
+('moto-trail-200cc', 'Moto Trail 200cc', 'moto', 'Trail', 950000, NULL,
+ 'La Moto Trail 200cc est conçue pour ceux qui aiment sortir des sentiers battus.',
+ 'Moto trail 200cc tout-terrain pour l''aventure',
+ '[{"label": "Moteur", "value": "200cc, 4 temps, refroidi par air"}, {"label": "Puissance", "value": "16 CV / 7500 tr/min"}, {"label": "Capacité réservoir", "value": "14 litres"}, {"label": "Transmission", "value": "5 vitesses"}, {"label": "Freins", "value": "Disque avant et arrière"}, {"label": "Poids à vide", "value": "135 kg"}, {"label": "Hauteur selle", "value": "850 mm"}, {"label": "Garde au sol", "value": "250 mm"}, {"label": "Vitesse max", "value": "120 km/h"}, {"label": "Consommation", "value": "3L/100km"}]',
+ ARRAY['Suspension long débattement', 'Pneus tout-terrain', 'Protection moteur incluse', 'Guidon haut enduro', 'Phares haute puissance', 'Garantie 1 an / 12 000 km'],
+ ARRAY['/images/motorcycle-product.jpg'], true, false, true, 4.8, 89),
+
+('scooter-125cc', 'Scooter 125cc', 'moto', 'Scooter', 650000, NULL,
+ 'Le Scooter 125cc offre le summum du confort urbain avec sa transmission automatique.',
+ 'Scooter automatique 125cc confortable avec grand coffre',
+ '[{"label": "Moteur", "value": "125cc, 4 temps"}, {"label": "Puissance", "value": "9 CV / 7500 tr/min"}, {"label": "Capacité réservoir", "value": "8 litres"}, {"label": "Transmission", "value": "CVT automatique"}, {"label": "Freins", "value": "Disque avant, tambour arrière"}, {"label": "Poids à vide", "value": "115 kg"}, {"label": "Coffre", "value": "35 litres (2 casques)"}, {"label": "Vitesse max", "value": "90 km/h"}, {"label": "Consommation", "value": "2.2L/100km"}]',
+ ARRAY['Transmission automatique CVT', 'Grand coffre sous selle', 'Tablier de protection', 'Crochets pour sacs', 'Prise USB intégrée', 'Garantie 1 an / 10 000 km'],
+ ARRAY['/images/motorcycle-product.jpg'], true, false, false, 4.6, 178),
+
+-- PIECES DETACHEES
+('kit-chaine-renforcee', 'Kit Chaîne Renforcée 428H', 'piece', 'Transmission', 35000, NULL,
+ 'Kit chaîne complet renforcé comprenant chaîne 428H de qualité supérieure, pignon et couronne.',
+ 'Kit chaîne complet renforcé pour motos 125-150cc',
+ '[{"label": "Type chaîne", "value": "428H renforcée"}, {"label": "Nombre maillons", "value": "130"}, {"label": "Pignon", "value": "14 dents"}, {"label": "Couronne", "value": "42 dents"}, {"label": "Matériau", "value": "Acier traité"}, {"label": "Compatibilité", "value": "125-150cc universelle"}]',
+ ARRAY['Chaîne renforcée haute résistance', 'Traitement anti-corrosion', 'Joints toriques étanches', 'Installation facile', 'Durée de vie prolongée'],
+ ARRAY['/images/spare-parts.jpg'], true, true, false, 4.7, 456),
+
+('plaquettes-frein-avant', 'Plaquettes de Frein Avant', 'piece', 'Freinage', 12000, NULL,
+ 'Plaquettes de frein avant haute performance pour un freinage optimal et sécurisé.',
+ 'Plaquettes de frein avant haute performance',
+ '[{"label": "Type", "value": "Semi-métallique"}, {"label": "Compatibilité", "value": "Universelle moto/tricycle"}, {"label": "Dimensions", "value": "Standard"}, {"label": "Durée de vie", "value": "15 000 - 20 000 km"}]',
+ ARRAY['Freinage progressif et puissant', 'Résistance haute température', 'Usure uniforme', 'Faible bruit de freinage'],
+ ARRAY['/images/spare-parts.jpg'], true, false, false, 4.5, 289),
+
+('filtre-huile-moteur', 'Filtre à Huile Moteur', 'piece', 'Moteur', 5000, NULL,
+ 'Filtre à huile de qualité OEM pour une filtration optimale des impuretés.',
+ 'Filtre à huile qualité OEM',
+ '[{"label": "Type", "value": "Cartouche"}, {"label": "Compatibilité", "value": "125-250cc"}, {"label": "Intervalle", "value": "3000 km"}, {"label": "Filtration", "value": "99.9%"}]',
+ ARRAY['Filtration haute efficacité', 'Joint d''étanchéité inclus', 'Qualité équipement d''origine', 'Installation facile'],
+ ARRAY['/images/spare-parts.jpg'], true, false, false, 4.8, 567),
+
+('bougie-allumage-ngk', 'Bougie d''Allumage NGK', 'piece', 'Allumage', 3500, NULL,
+ 'Bougie d''allumage NGK originale pour un démarrage fiable et des performances optimales.',
+ 'Bougie NGK originale pour démarrage fiable',
+ '[{"label": "Marque", "value": "NGK"}, {"label": "Type", "value": "Standard"}, {"label": "Écartement", "value": "0.7-0.8mm"}, {"label": "Culot", "value": "10mm"}]',
+ ARRAY['Marque de confiance NGK', 'Étincelle puissante', 'Durée de vie 10 000 km', 'Résistance aux dépôts'],
+ ARRAY['/images/spare-parts.jpg'], true, false, false, 4.9, 892),
+
+('pneu-arriere-300-18', 'Pneu Arrière 3.00-18', 'piece', 'Pneumatiques', 28000, NULL,
+ 'Pneu arrière haute qualité dimension 3.00-18 pour motos.',
+ 'Pneu arrière 3.00-18 haute adhérence',
+ '[{"label": "Dimension", "value": "3.00-18"}, {"label": "Type", "value": "Route/Mixte"}, {"label": "Indice charge", "value": "52P"}, {"label": "Chambre", "value": "Avec chambre à air"}]',
+ ARRAY['Gomme haute durabilité', 'Adhérence optimale', 'Évacuation d''eau efficace', 'Kilométrage élevé'],
+ ARRAY['/images/spare-parts.jpg'], true, false, false, 4.6, 234),
+
+('batterie-12v-7ah', 'Batterie 12V 7Ah', 'piece', 'Électrique', 25000, NULL,
+ 'Batterie 12V 7Ah sans entretien pour moto et tricycle.',
+ 'Batterie 12V 7Ah sans entretien',
+ '[{"label": "Tension", "value": "12V"}, {"label": "Capacité", "value": "7Ah"}, {"label": "Type", "value": "Gel sans entretien"}, {"label": "Dimensions", "value": "150x65x95mm"}]',
+ ARRAY['Sans entretien', 'Technologie gel', 'Résistante aux vibrations', 'Démarrage puissant'],
+ ARRAY['/images/spare-parts.jpg'], true, false, false, 4.4, 156),
+
+('amortisseur-arriere', 'Amortisseur Arrière Renforcé', 'piece', 'Suspension', 45000, NULL,
+ 'Amortisseur arrière renforcé pour moto et tricycle.',
+ 'Amortisseur arrière réglable renforcé',
+ '[{"label": "Type", "value": "Hydraulique"}, {"label": "Réglage", "value": "Précharge 5 positions"}, {"label": "Longueur", "value": "320mm (standard)"}, {"label": "Ressort", "value": "Renforcé"}]',
+ ARRAY['Réglage précharge', 'Huile hydraulique haute qualité', 'Ressort renforcé', 'Installation directe'],
+ ARRAY['/images/spare-parts.jpg'], true, false, true, 4.7, 78),
+
+('kit-carburateur-complet', 'Kit Carburateur Complet', 'piece', 'Alimentation', 55000, NULL,
+ 'Kit carburateur complet avec tous les joints et gicleurs.',
+ 'Kit carburateur complet avec joints et gicleurs',
+ '[{"label": "Diamètre", "value": "26mm (standard)"}, {"label": "Type", "value": "À dépression"}, {"label": "Contenu", "value": "Carbu + joints + gicleurs"}, {"label": "Compatibilité", "value": "125-150cc"}]',
+ ARRAY['Carburateur complet', 'Tous joints inclus', 'Jeu de gicleurs', 'Instructions incluses'],
+ ARRAY['/images/spare-parts.jpg'], true, false, false, 4.5, 112)
+ON CONFLICT (slug) DO NOTHING;
